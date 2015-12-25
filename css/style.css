@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+.box {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: #F0F0D8;
+    overflow: hidden;
+    text-align: center;
+    color: #A7BA59;
+}
+#waiting {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -2rem;
+    margin-top: -2rem;
+    -webkit-animation: waitAnim 1.5s infinite linear;
+    animation: waitAnim 1.5s infinite linear;
+}
+@keyframes waitAnim {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes waitAnim {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+#player .function {
+    font-size: 1rem;
+    display: inline;
+}
+#player .share {
+    float: right;
+    width: auto;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+}
+#player .record {
+    float: left;
+    width: auto;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+#player .function img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+#player .main {
+    margin: 0.5rem;
+    margin-top: 2.2rem;
+    width: 15rem;
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-color: #F0D890;
+    border-radius: 7.5rem;
+}
+#player .playMode {
+    background-image: url(http://7xpfm0.com1.z0.glb.clouddn.com/Web_40-play.png);
+    background-position: 3em;
+    background-size: 80%;
+}
+#player .recordMode {
+    background-image: url(http://7xpfm0.com1.z0.glb.clouddn.com/Web_55-microphone.png);
+    background-position: center;
+    background-size: 70%;
+}
+#player .stopMode {
+    background-image: url(http://7xpfm0.com1.z0.glb.clouddn.com/Web_15-stop.png);
+    background-position: center;
+    background-size: 60%;
+}
+#player .bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#player .control {
+    margin-left: auto;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-color: #F0D890;
+    background-size: 80%;
+    border-radius: 0.9rem;
+}
+#player .play {
+    background-image: url(http://7xpfm0.com1.z0.glb.clouddn.com/Web_40-play.png);
+    background-position: 0.6rem;
+}
+#player .stop {
+    background-image: url(http://7xpfm0.com1.z0.glb.clouddn.com/Web_15-stop.png);
+    background-position: center;
+}
+.hide {
+    display: none;
+}
+#player .scale {
+    -webkit-animation: scalAnim 6s infinite linear;
+    animation: scalAnim 6s infinite linear;
+}
+@keyframes scalAnim {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    15% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    30% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+    }
+    45% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    60% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    75% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes scalAnim {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    15% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    30% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+    }
+    45% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    60% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    75% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}

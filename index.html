@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html style="font-size: 40px;height: 100%;">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>简单得不能再简单的录音机</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./lib/jquery.js"></script>
+</head>
+
+<body id="player" style="height: 100%;">
+    <div class="box">
+        <img id="waiting" src="http://7xpfm0.com1.z0.glb.clouddn.com/Web_52-Loading.png" />
+        <div class="record hide" id="recordArea">
+            <img src="http://7xpfm0.com1.z0.glb.clouddn.com/Web_55-microphone.png" />录音</div>
+        <div class="share scale hide" id="shareArea">
+            <img src="http://7xpfm0.com1.z0.glb.clouddn.com/Web_weixin.png" />分享</div>
+        <div class="main recordMode hide" id="main"></div>
+        <p id="infoText"></p>
+        <div class="bottom">
+            <div class="control play hide" id="control"></div>
+        </div>
+    </div>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="./src/beacon.js"></script>
+    <script src="./src/main.js"></script>
+    <script src="./src/fitPhone.js"></script>
+</body>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?bf20de386c423fcaf523d8ab915d84d3";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</html>
